@@ -10,6 +10,9 @@ struct list{
 typedef struct list list;
 
 void init(list *l);
-void insert(list *l,node *n);
+void insert(list *l,node *n);// By default add ay the end of the list
 node* createnode();
 void display(list *l);
+void searchlist(list *l,int data);
+
+void delete(list *l,int position);

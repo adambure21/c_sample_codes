@@ -14,4 +14,12 @@ void main(int argc,char* argv[]){
 			break;
 	}
 	display(&l);
+	int position;
+	printf("\n Enter data to search in the list :\t");
+	int data;
+	scanf("%d",&data);
+	searchlist(&l,data);
+	printf("\n Enter position to delete\n");
+	scanf("%d",&position);
+	delete(&l,position);
 }
